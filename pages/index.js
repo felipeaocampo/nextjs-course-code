@@ -1,5 +1,19 @@
+import Link from "next/link";
+
 const HomePage = () => {
-  return <h1>Hello world!</h1>;
+  return (
+    <div>
+      <h1>HomePage</h1>
+      <ul>
+        <li>
+          <Link href="/portfolio">Portfolio</Link>
+        </li>
+        <li>
+          <Link href="/clients">Clients</Link>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default HomePage;
